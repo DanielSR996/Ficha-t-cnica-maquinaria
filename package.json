@@ -1,0 +1,20 @@
+{
+  "name": "maquinarias-app",
+  "version": "1.0.0",
+  "description": "Aplicación web para gestionar fichas técnicas de maquinaria importada",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["maquinarias", "fichas-tecnicas", "react", "nodejs", "express", "mysql"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
